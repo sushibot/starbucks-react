@@ -23,11 +23,13 @@ function App() {
             <div className="header-item-container">
               <div className="header-item-left">
                 <Nav className="nav">
-                  <NavItem className="nav-item">Menu</NavItem>
-                  <NavItem className="nav-item nav-item-active">
+                  <NavItem className="nav-item font-weight-700">Menu</NavItem>
+                  <NavItem className="nav-item font-weight-700 nav-item-active">
                     Rewards
                   </NavItem>
-                  <NavItem className="nav-item ">Gift Cards</NavItem>
+                  <NavItem className="nav-item font-weight-700">
+                    Gift Cards
+                  </NavItem>
                 </Nav>
               </div>
               <div className="header-item-right">
