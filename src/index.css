@@ -18,6 +18,20 @@ li {
   padding: 0;
   list-style-type: none;
 }
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre {
+  margin: 0;
+}
 body {
   width: 100%;
   font-size: 1rem;
@@ -39,6 +53,12 @@ body {
 }
 .text-uppercase {
   text-transform: uppercase;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.pointer {
+  cursor: pointer;
 }
 .bg-white {
   background-color: var(--neutral-10);
@@ -76,6 +96,12 @@ body {
 }
 .font-weight-100 {
   font-weight: 100;
+}
+.page-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1440px;
 }
 .nav {
   display: flex;

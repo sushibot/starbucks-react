@@ -3,13 +3,14 @@ import NavItem from "./components/nav-item/nav-item";
 import Nav from "./components/nav/nav";
 import Button from "./components/button/button";
 import Header from "./components/header/header";
+import Hero from "./components/hero/hero";
 import "./App.css";
 
 function App() {
   return (
     <>
       <Header className="header bg-white">
-        <div class="header-container">
+        <div className="header-container">
           {/* <div className="logo-container">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.9 595.3">
               <g fill="#61DAFB">
@@ -19,7 +20,7 @@ function App() {
               </g>
             </svg>
           </div> */}
-          <section class="header-container page-container">
+          <section className="header-container page-container">
             <div className="header-item-container">
               <div className="header-item-left">
                 <Nav className="nav">
@@ -41,6 +42,7 @@ function App() {
         </div>
       </Header>
       <main>
+        <Hero />
         <p style={{ minHeight: "100vh" }}>
           lorem ipsunm alot of random words here
         </p>
