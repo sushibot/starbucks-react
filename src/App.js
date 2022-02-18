@@ -4,6 +4,8 @@ import Nav from "./components/nav/nav";
 import Button from "./components/button/button";
 import Header from "./components/header/header";
 import Hero from "./components/hero/hero";
+import InformationSection from "./components/information-section/information-section";
+
 import "./App.css";
 
 function App() {
@@ -24,11 +26,11 @@ function App() {
             <div className="header-item-container">
               <div className="header-item-left">
                 <Nav className="nav">
-                  <NavItem className="nav-item font-weight-700">Menu</NavItem>
-                  <NavItem className="nav-item font-weight-700 nav-item-active">
+                  <NavItem className="nav-item font-weight-600">Menu</NavItem>
+                  <NavItem className="nav-item font-weight-600 nav-item-active">
                     Rewards
                   </NavItem>
-                  <NavItem className="nav-item font-weight-700">
+                  <NavItem className="nav-item font-weight-600">
                     Gift Cards
                   </NavItem>
                 </Nav>
@@ -43,10 +45,10 @@ function App() {
       </Header>
       <main>
         <Hero />
-        <p style={{ minHeight: "100vh" }}>
-          lorem ipsunm alot of random words here
-        </p>
-        {/* <Button className="btn btn-primary" text="Join now" /> */}
+        <InformationSection
+          title="Getting started is easy"
+          description="Earn Stars and get rewarded in a few easy steps."
+        />
       </main>
     </>
   );

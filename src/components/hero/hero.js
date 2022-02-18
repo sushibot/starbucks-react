@@ -9,7 +9,7 @@ export default function Hero() {
         style={{
           backgroundSize: "cover",
           position: "relative",
-          minHeight: "83vh",
+          minHeight: "90vh",
           backgroundImage: ` linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),url(${image})`,
         }}
       >

@@ -1,7 +1,39 @@
 @font-face {
-  font-family: "SoDoSans";
-  src: url("../assets/fonts/sodosans/@font-face/d7e8a95865396cddca89b00080d2cba6.ttf");
+  font-family: "Open Sans";
+  src: url("../assets/fonts/opensans/static/OpenSans/OpenSans-Light.ttf");
+  font-weight: 300;
 }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/opensans/static/OpenSans/OpenSans-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/opensans/static/OpenSans/OpenSans-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/opensans/static/OpenSans/OpenSans-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/opensans/static/OpenSans/OpenSans-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/opensans/static/OpenSans/OpenSans-ExtraBold.ttf");
+  font-weight: 800;
+}
+
 :root {
   --primary-100: #1e3932;
   --primary-10: #d4e9e2;
@@ -10,6 +42,9 @@
   --neutral-50: #f3f1e7;
   --neutral-10: #fff;
   --neutral-100: #000000;
+}
+html {
+  font-size: 62.5%;
 }
 ul,
 ol,
@@ -34,10 +69,10 @@ pre {
 }
 body {
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   margin: 0;
-  font-family: "SoDoSans", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 1px;
@@ -56,6 +91,9 @@ body {
 }
 .text-underline {
   text-decoration: underline;
+}
+.text-sm {
+  font-size: 1.4rem;
 }
 .pointer {
   cursor: pointer;
@@ -113,7 +151,6 @@ body {
   text-transform: uppercase;
   padding: 2.5rem 0;
   cursor: pointer;
-  font-size: 0.85rem;
 }
 
 .nav-item:hover {
