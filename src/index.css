@@ -77,21 +77,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 1px;
 }
+
 .text-secondary {
   color: var(--secondary-100);
 }
+
 .text-primary {
   color: var(--primary-100);
 }
+
 .text-white {
   color: var(--neutral-10);
 }
+
 .text-uppercase {
   text-transform: uppercase;
 }
+
 .text-underline {
   text-decoration: underline;
 }
+
 .text-sm {
   font-size: 1.4rem;
 }
@@ -149,7 +155,7 @@ body {
   letter-spacing: 2px;
   color: var(--neutral-100);
   text-transform: uppercase;
-  padding: 2.5rem 0;
+  padding: 3rem 0;
   cursor: pointer;
 }
 

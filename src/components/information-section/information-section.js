@@ -27,7 +27,7 @@ const information_items = [
     image: image_two,
     children: (
       <>
-        <p className="text-sm">
+        <p>
           Use cash, credit/debit card or save some time and pay right through
           the app. You’ll collect Stars all ways.
           <a className="text-underline text-secondary">Learn how</a>
@@ -101,9 +101,13 @@ export default function InformationSection({ title, description }) {
           <InformationItem title="Create an account" image={image_one}>
             <p className="font-weight-400">
               To get started,
-              <a className="text-underline text-secondary">join now.</a> You can
-              also
-              <a className="text-underline text-secondary">Join in the app</a>
+              <a className="text-underline text-secondary pointer">
+                join now.
+              </a>{" "}
+              You can also
+              <a className="text-underline text-secondary pointer">
+                Join in the app
+              </a>
               to get access to the full range of Starbucks® Rewards benefits.
             </p>
           </InformationItem>
@@ -111,10 +115,10 @@ export default function InformationSection({ title, description }) {
             title="Order and pay how you’d like"
             image={image_two}
           >
-            <p className="text-sm">
+            <p>
               Use cash, credit/debit card or save some time and pay right
               through the app. You’ll collect Stars all ways.
-              <a className="text-underline text-secondary">Learn how</a>
+              <a className="text-underline text-secondary pointer">Learn how</a>
             </p>
           </InformationItem>
           <InformationItem title="Earn stars, get rewards" image={image_three}>
