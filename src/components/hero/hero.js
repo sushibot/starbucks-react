@@ -21,7 +21,8 @@ export default function Hero() {
             transform: "translate(-50%, -50%)",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "flex-start",
+            justifyContent: "center",
+            alignItems: "center",
             gap: "1rem",
           }}
         >
@@ -33,8 +34,13 @@ export default function Hero() {
             <Button className="btn btn-primary" text="Join now" />
           </div>
           <p className="text-white">
-            Or{" "}
-            <a className="text-white pointer text-underline">join in the app</a>{" "}
+            Or
+            <a
+              className="text-white pointer text-underline"
+              style={{ padding: "0 0.5rem" }}
+            >
+              join in the app
+            </a>
             for the best experience
           </p>
         </div>

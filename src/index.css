@@ -93,11 +93,12 @@ body {
 .text-uppercase {
   text-transform: uppercase;
 }
-
 .text-underline {
   text-decoration: underline;
 }
-
+.text-hover-secondary:hover {
+  color: var(--secondary-100);
+}
 .text-sm {
   font-size: 1.4rem;
 }
