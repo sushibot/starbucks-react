@@ -1,9 +1,17 @@
-import logo from "./sbs_logo.png";
+import image_one from "./sbs_one.png";
+import image_two from "./sbs_two.png";
+import image_three from "./sbs_three.png";
+
+import image_four from "./fun-freebies.png";
+import image_five from "./order-and-pay-ahead.png";
+import image_six from "./get-to-free-faster.png";
+
 import NavItem from "./components/nav-item/nav-item";
 import Nav from "./components/nav/nav";
 import Button from "./components/button/button";
 import Header from "./components/header/header";
 import Hero from "./components/hero/hero";
+import InformationItem from "./components/information-item/information-item";
 import InformationSection from "./components/information-section/information-section";
 
 import "./App.css";
@@ -88,14 +96,68 @@ function App() {
       </Header>
       <main>
         <Hero />
+
         <InformationSection
           title="Getting started is easy"
           description="Earn Stars and get rewarded in a few easy steps."
-        />
+        >
+          <InformationItem title="Create an account" image={image_one}>
+            <p className="font-weight-400">
+              To get started,
+              <a className="text-underline text-secondary pointer">
+                join now.
+              </a>{" "}
+              You can also
+              <a className="text-underline text-secondary pointer">
+                Join in the app
+              </a>
+              to get access to the full range of Sushibucks Rewards benefits.
+            </p>
+          </InformationItem>
+          <InformationItem
+            title="Order and pay how you’d like"
+            image={image_two}
+          >
+            <p>
+              Use cash, credit/debit card or save some time and pay right
+              through the app. You’ll collect Stars all ways.
+              <a className="text-underline text-secondary pointer">Learn how</a>
+            </p>
+          </InformationItem>
+          <InformationItem title="Earn stars, get rewards" image={image_three}>
+            <p>
+              As you earn Stars, you can redeem them for Rewards—like free food,
+              drinks, and more. Start redeeming with as little as 25 Stars!
+            </p>
+          </InformationItem>
+        </InformationSection>
+
         <InformationSection
           title="Endless Extras"
           description="Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to easy ordering, tasty Rewards and—yes, free coffee."
-        />
+        >
+          <InformationItem title="Fun freebies" image={image_four}>
+            <p className="font-weight-400">
+              Not only can you earn free coffee, look forward to a birthday
+              treat plus coffee and tea refills.
+            </p>
+            <a className="text-underline text-secondary pointer">Learn more</a>
+          </InformationItem>
+          <InformationItem title="Order & pay ahead" image={image_five}>
+            <p>
+              Enjoy the convenience of in-store, curbside or drive-thru pickup
+              at select stores.
+            </p>
+            <a className="text-underline text-secondary pointer">Learn more</a>
+          </InformationItem>
+          <InformationItem title="Get to free faster" image={image_six}>
+            <p>
+              Earn Stars even quicker with Bonus Star challenges, Double Star
+              Days and exciting games.
+            </p>
+            <a className="text-underline text-secondary pointer">Learn more</a>
+          </InformationItem>
+        </InformationSection>
       </main>
     </>
   );
