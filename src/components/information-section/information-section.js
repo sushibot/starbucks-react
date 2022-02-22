@@ -48,7 +48,7 @@ export default function InformationSection({ title, description }) {
               <a className="text-underline text-secondary pointer">
                 Join in the app
               </a>
-              to get access to the full range of Starbucks® Rewards benefits.
+              to get access to the full range of Sushibucks Rewards benefits.
             </p>
           </InformationItem>
           <InformationItem
