@@ -1,6 +1,11 @@
 import React from "react";
 
-export default function InformationItem({ image, title, children }) {
+export default function InformationItem({
+  image,
+  imageStyles,
+  title,
+  children,
+}) {
   return (
     <>
       <div
@@ -12,7 +17,7 @@ export default function InformationItem({ image, title, children }) {
           gap: "1.75rem",
         }}
       >
-        <div style={{ width: "50px" }}>
+        <div style={imageStyles}>
           <img src={image} style={{ width: "100%" }} />
         </div>
         <h3 className="font-weight-500">{title}</h3>

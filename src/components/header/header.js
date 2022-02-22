@@ -7,7 +7,7 @@ export default function Header({ className, children }) {
       <section
         style={{
           backgroundColor: "var(--primary-100)",
-          height: "50px",
+          height: "45px",
           display: "flex",
           alignItems: "center",
         }}

@@ -11,6 +11,7 @@ import Nav from "./components/nav/nav";
 import Button from "./components/button/button";
 import Header from "./components/header/header";
 import Hero from "./components/hero/hero";
+import TabSection from "./components/tab-section/tab-section";
 import InformationItem from "./components/information-item/information-item";
 import InformationSection from "./components/information-section/information-section";
 
@@ -96,12 +97,15 @@ function App() {
       </Header>
       <main>
         <Hero />
-
         <InformationSection
           title="Getting started is easy"
           description="Earn Stars and get rewarded in a few easy steps."
         >
-          <InformationItem title="Create an account" image={image_one}>
+          <InformationItem
+            title="Create an account"
+            image={image_one}
+            imageStyles={{ width: "50px" }}
+          >
             <p className="font-weight-400">
               To get started,
               <a className="text-underline text-secondary pointer">
@@ -117,6 +121,7 @@ function App() {
           <InformationItem
             title="Order and pay how you’d like"
             image={image_two}
+            imageStyles={{ width: "50px" }}
           >
             <p>
               Use cash, credit/debit card or save some time and pay right
@@ -124,33 +129,49 @@ function App() {
               <a className="text-underline text-secondary pointer">Learn how</a>
             </p>
           </InformationItem>
-          <InformationItem title="Earn stars, get rewards" image={image_three}>
+          <InformationItem
+            title="Earn stars, get rewards"
+            image={image_three}
+            imageStyles={{ width: "50px" }}
+          >
             <p>
               As you earn Stars, you can redeem them for Rewards—like free food,
               drinks, and more. Start redeeming with as little as 25 Stars!
             </p>
           </InformationItem>
         </InformationSection>
-
+        <TabSection />
         <InformationSection
           title="Endless Extras"
           description="Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to easy ordering, tasty Rewards and—yes, free coffee."
         >
-          <InformationItem title="Fun freebies" image={image_four}>
+          <InformationItem
+            title="Fun freebies"
+            image={image_four}
+            imageStyles={{ width: "120px" }}
+          >
             <p className="font-weight-400">
               Not only can you earn free coffee, look forward to a birthday
               treat plus coffee and tea refills.
             </p>
             <a className="text-underline text-secondary pointer">Learn more</a>
           </InformationItem>
-          <InformationItem title="Order & pay ahead" image={image_five}>
+          <InformationItem
+            title="Order & pay ahead"
+            image={image_five}
+            imageStyles={{ width: "120px" }}
+          >
             <p>
               Enjoy the convenience of in-store, curbside or drive-thru pickup
               at select stores.
             </p>
             <a className="text-underline text-secondary pointer">Learn more</a>
           </InformationItem>
-          <InformationItem title="Get to free faster" image={image_six}>
+          <InformationItem
+            title="Get to free faster"
+            image={image_six}
+            imageStyles={{ width: "120px" }}
+          >
             <p>
               Earn Stars even quicker with Bonus Star challenges, Double Star
               Days and exciting games.
