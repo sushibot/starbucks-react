@@ -92,6 +92,10 @@ function App() {
           title="Getting started is easy"
           description="Earn Stars and get rewarded in a few easy steps."
         />
+        <InformationSection
+          title="Endless Extras"
+          description="Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to easy ordering, tasty Rewards and—yes, free coffee."
+        />
       </main>
     </>
   );

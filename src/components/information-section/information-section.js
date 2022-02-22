@@ -25,6 +25,8 @@ export default function InformationSection({ title, description }) {
             display: "flex",
             flexDirection: "column",
             gap: "2rem",
+            width: "100%",
+            maxWidth: "800px",
           }}
         >
           <h2>{title}</h2>
