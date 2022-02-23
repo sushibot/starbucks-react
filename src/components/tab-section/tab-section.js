@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
 import image_025 from "../../025.png";
 import TabItem from "../tab-item/tab-item";
 
+const tabItems = [
+  { text: "25", isActive: true },
+  { text: "50", isActive: false },
+  { text: "150", isActive: false },
+  { text: "200", isActive: false },
+  { text: "400", isActive: false },
+];
+
 export default function TabSection() {
+  const id = document.getElementById("0");
+  console.log(id);
   return (
     <>
       <div
@@ -26,11 +36,16 @@ export default function TabSection() {
         >
           <h2>Get your favorites for free</h2>
           <ol style={{ display: "flex", width: "600px" }}>
-            <TabItem text="25" isActive="true" />
-            <TabItem text="50" />
-            <TabItem text="150" />
-            <TabItem text="200" />
-            <TabItem text="400" />
+            {tabItems.map((value, index) => {
+              const text = value.text;
+              return (
+                <TabItem
+                  text={value.text}
+                  isActive={value.isActive}
+                  key={index}
+                />
+              );
+            })}
           </ol>
         </div>
       </div>

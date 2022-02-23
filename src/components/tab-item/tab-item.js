@@ -6,8 +6,7 @@ export default function TabItem({ text, isActive }) {
       style={{
         padding: "2rem",
         width: "100%",
-        borderBottom:
-          isActive === "true" ? "4px solid var(--secondary-100)" : "",
+        borderBottom: isActive ? "4px solid var(--secondary-100)" : "",
       }}
     >
       <button
